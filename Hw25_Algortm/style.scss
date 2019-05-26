@@ -1,0 +1,15 @@
+
+main_div{
+    background-color: black;
+    position: relative;
+    width: 250px;
+    height: 250px;
+
+    div-child{
+        position: absolute;
+        background-color: red;
+        width: random(100) px;
+        height: 50px;
+        
+    }
+}

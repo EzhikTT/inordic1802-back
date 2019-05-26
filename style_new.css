@@ -1,0 +1,42 @@
+.area {
+  display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+.area .cell {
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.area .cell.cross::before {
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  content: " ";
+  border-left: 1px solid black;
+  transform: rotate(-45deg);
+}
+.area .cell.cross::after {
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
+  content: " ";
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+}
+.area .cell.zero::before {
+  content: " ";
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style_new.css.map */
